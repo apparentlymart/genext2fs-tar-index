@@ -5,6 +5,12 @@ archive of the desired contents of an `ext2` filesystem and produces
 a file information table in the format expected by
 [`genext2fs`](https://github.com/devcurmudgeon/genext2fs).
 
+```
+Usage: ./genext2fs-tar-index [tar-file]
+
+Will read from stdin if no tar-file argument is provided
+```
+
 `genext2fs` is a program for creating ext2 filesystem images without
 root access and without mounting anything. This can be useful as
 part of an automated build process for a Linux distribution, for
